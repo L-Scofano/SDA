@@ -1,6 +1,6 @@
 <div align="center">
-<h1>Following the Human Thread in Social Navigation</h1>
-<h3> <i>L. Scofano¹*, A. Sampieri¹*, T. Campari²*, V. Sacco¹</i></h3>
+<h1>Following the Human Thread in Social Navigation (ICLR 2025)</h1>
+<h3> <i>L. Scofano¹*, A. Sampieri¹*, T. Campari²*, V. Sacco¹*</i></h3>
 <h3> <i>I. Spinelli¹, L. Ballan³, F. Galasso¹ </i></h3>
  <h4> <i>Sapienza University of Rome¹, Fondazione Bruno Kessler(FBK)², University of Padova³
 </i></h4>
