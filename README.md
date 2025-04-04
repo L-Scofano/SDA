@@ -48,7 +48,7 @@ We propose the first Social Dynamics Adaptation model (SDA) based on the robot's
 
 ## Train and Evaluation
 
-Training and evaluation have been done on an HPC system .
+Training and evaluation have been done on an HPC system.
 Training and evaluation configuration files are located in [habitat-baselines/habitat-baselines/config/social_nav](https://github.com/S4b3/SocialNav3.0/tree/main/habitat-baselines/habitat_baselines/config/social_nav)
 
 An example training call is as follows:
@@ -95,11 +95,11 @@ python -u -m habitat_baselines.run \
     habitat.simulator.agents.agent_0.joint_start_noise=0.0
 ```
 
-## Ackowledgement 
+## Acknowledgement 
 Our code is built on top of the great [habitat-lab](https://github.com/facebookresearch/habitat-lab) codebase.
 
 ## Citation
-If you find SDA helpfu, please consider citing:
+If you find SDA helpful, please consider citing:
 ```bibtex
 @inproceedings{scofano2025followingthehumanthread,
       title={Following the Human Thread in Social Navigation}, 
