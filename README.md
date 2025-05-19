@@ -25,16 +25,18 @@ We propose the first Social Dynamics Adaptation model (SDA) based on the robot's
    ```
 
 1. **conda install habitat-sim**
-   - To install habitat-sim with bullet physics
+   - Install habitat-sim with bullet physics
       ```
       conda install habitat-sim withbullet -c conda-forge -c aihabitat
       ```
-      Note, for newer features added after the most recent release, you may need to install `aihabitat-nightly`. See Habitat-Sim's [installation instructions](https://github.com/facebookresearch/habitat-sim#installation) for more details.
+      Note, for newer features added after the most recent release, you could install `aihabitat-nightly`. See Habitat-Sim's [installation instructions](https://github.com/facebookresearch/habitat-sim#installation) for more details. For **SDA**, these shouldn't be necessary.
 
-1. **pip install habitat-lab stable version**.
+1. **pip install habitat-lab sda's version**.  
+Our repository was born from an habitat-lab snapshot, to make sure everything works properly, install the snapshot.
+   
 
       ```bash
-      git clone --branch stable https://github.com/facebookresearch/habitat-lab.git
+      git clone git@github.com:L-Scofano/SDA.git
       cd habitat-lab
       pip install -e habitat-lab  # install habitat_lab
       ```
@@ -48,8 +50,15 @@ We propose the first Social Dynamics Adaptation model (SDA) based on the robot's
 
 ## Train and Evaluation
 
+Checkpoints are released [here](https://drive.google.com/drive/folders/1I1akcivfxHzEf8DIudXGMcVy0plWIJ70?usp=sharing).
+
 Training and evaluation have been done on an HPC system.
 Training and evaluation configuration files are located in [habitat-baselines/habitat-baselines/config/social_nav](https://github.com/S4b3/SocialNav3.0/tree/main/habitat-baselines/habitat_baselines/config/social_nav)
+
+
+To install the required datasets, please follow the instructions provided in the [habitat-lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines#habitat-30-multi-agent-training) repository. For questions regarding datasets and simulator installation, please refer directly to their repository, as we are not responsible for Habitat's installation pipeline.
+
+
 
 An example training call is as follows:
 
@@ -96,7 +105,7 @@ python -u -m habitat_baselines.run \
 ```
 
 ## Acknowledgement 
-Our code is built on top of the great [habitat-lab](https://github.com/facebookresearch/habitat-lab) codebase.
+Our code is built on top of the [habitat-lab](https://github.com/facebookresearch/habitat-lab) codebase.
 
 ## Citation
 If you find SDA helpful, please consider citing:
@@ -108,5 +117,9 @@ If you find SDA helpful, please consider citing:
       booktitle={ICLR},
 }
 ```
+
+## Bugs and Issues
+This repository is being maintained, if you find any problem with our code or need help configuring our framework don't hesitate in opening an issue. 
+
 ## Contact
 If you have any questions, feel free to contact any of the main contributors. Thank you!
