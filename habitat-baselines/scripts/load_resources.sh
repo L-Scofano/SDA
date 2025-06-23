@@ -1,1 +1,0 @@
-srun -A IscrC_T2M -p boost_usr_prod --time 06:00:00 -N 1 --ntasks-per-node=4 --cpus-per-task=8 --gres=gpu:1 --pty /bin/bash

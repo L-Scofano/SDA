@@ -4,10 +4,10 @@
 phase=second
 
 # specify checkpoint folder, this is not used during evaluation. Used in training to save checkpoints.
-checkpoint_folder=/media/nvme2/lucas/code/SocialNav3.0/checkpoints_social_nav/stage_two_t20/transfer/
+checkpoint_folder=YOUR_CHECKPOINT_FOLDER_PATH
 
 # specify the checkpoint path to evaluate
-eval_checkpoint_path=/media/nvme2/lucas/code/SocialNav3.0/checkpoints_social_nav/stage_two_t20/transfer/ckpt.80.pth
+eval_checkpoint_path=YOUR_EVAL_CHECKPOINT_PATH
 
 python -u -m habitat_baselines.run \
     --config-name=social_nav/eval_working.yaml \
